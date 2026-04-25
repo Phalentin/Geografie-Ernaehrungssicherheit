@@ -1,0 +1,58 @@
+ *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink:    #0f1f0f;
+      --paper:  #f0f5f0;
+      --accent: #2d7a3a;
+      --muted:  #5a7a5a;
+      --rule:   #c3d6c3;
+    }
+
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-weight: 300;
+      font-size: 1.05rem;
+      line-height: 1.8;
+      min-height: 100vh;
+      padding: 2.5rem 1.5rem 4rem;
+      max-width: 620px;
+      margin: 0 auto;
+    }
+
+    .eyebrow {
+      font-size: .7rem;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: .6rem;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-weight: 900;
+      font-size: clamp(1.9rem, 7vw, 2.6rem);
+      line-height: 1.15;
+      margin-bottom: 1.4rem;
+    }
+
+    hr {
+      border: none;
+      border-top: 2px solid var(--ink);
+      margin-bottom: 1.6rem;
+    }
+
+    p {
+      color: #1a2e1a;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--rule);
+      font-size: .78rem;
+      color: var(--muted);
+      font-style: italic;
+    }
